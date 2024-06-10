@@ -150,6 +150,26 @@ header{
 }
 
 
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2d2a2a;
+    padding: 1rem 0.5rem;
+}
+
+.footer__title{
+    color: #FFF;
+    font: 400 1.2rem Archivo, sans-serif;
+}
+
+.footer__title__link{
+    color: #84a9f8;
+    text-decoration: none;
+}
+
+
+
 @media (min-width: 1025px) and (max-width: 1200px){
     
     .produtos__cards{

@@ -30,13 +30,17 @@ header{
     background-position: center;
     background-attachment:scroll;
     height: 43vh;
+    position: relative;
 }
 
 .inicio__text{
     display: flex;
     flex-direction: column;
     align-items: start;
-    padding: 0rem 0rem 0rem 15rem;
+    position: absolute;
+    left: 12rem;
+    top: 1rem;
+
     
 }
 
@@ -108,7 +112,7 @@ header{
     justify-content: space-between;
     gap: 1.5rem;
     height: auto;
-    width: 24rem;
+    width: 20.3rem;
 
 }
 
@@ -135,16 +139,16 @@ header{
 }
 
 .produtos__cards__card__text__title{
-    font: 500 1.2rem Archivo, sans-serif;
+    font: 500 1.1rem Archivo, sans-serif;
 }
 
 .produtos__cards__card__text__subtitle{
-    font: 500 1rem Archivo, sans-serif;
+    font: 500 0.9rem Archivo, sans-serif;
     color: #7CA2F4;
 }
 
 .produtos__cards__card__text__price{
-    font: 500 1.3rem Archivo, sans-serif;
+    font: 500 1.2rem Archivo, sans-serif;
     color: #121214;
 
 }
@@ -172,6 +176,11 @@ footer{
 
 @media (min-width: 1025px) and (max-width: 1312px){
     
+    .inicio__text{
+        left: 9.3rem;
+    }
+
+
     .produtos__cards{
         gap: 4rem;
     }
@@ -199,6 +208,7 @@ footer{
 
 @media(min-width: 769px) and (max-width: 1024px){
     
+
     .inicio__text__marca__img{
         width: 2rem;
     }
@@ -208,7 +218,7 @@ footer{
     }
     
     .inicio__text{
-        padding: 0rem 0rem 0rem 4rem;
+      left: 5rem;
     }
 
     .inicio__text__title{
@@ -234,7 +244,7 @@ footer{
     }
 
     .produtos__cards__card{
-        width: 21rem;
+        width: 18rem;
     }
 
     .produtos__cards__card__img img{
@@ -242,15 +252,15 @@ footer{
     }
 
     .produtos__cards__card__text__title{
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     .produtos__cards__card__text__subtitle{
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .produtos__cards__card__text__price{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
 }
@@ -265,7 +275,7 @@ footer{
     }
 
     .inicio__text{
-        padding: 0rem 0rem 0rem 2.5rem;
+        
     }
 
 

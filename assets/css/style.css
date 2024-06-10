@@ -170,7 +170,7 @@ footer{
 
 
 
-@media (min-width: 1025px) and (max-width: 1200px){
+@media (min-width: 1025px) and (max-width: 1312px){
     
     .produtos__cards{
         gap: 4rem;

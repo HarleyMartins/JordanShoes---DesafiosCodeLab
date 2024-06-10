@@ -113,8 +113,8 @@ header{
     gap: 1.5rem;
     height: auto;
     width: 20.3rem;
-
 }
+
 
 .produtos__cards__card__img{
     display: flex;
@@ -128,6 +128,11 @@ header{
 
 .produtos__cards__card__img img{
     width: 14rem;
+    transition: transform 1s ease;
+}
+
+.produtos__cards__card__img img:hover{
+    transform: scale(1.2);
 }
 
 .produtos__cards__card__text{

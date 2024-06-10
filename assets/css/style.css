@@ -1,0 +1,290 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 100dvh;
+}
+
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F3F7FF;
+    padding: 1rem 0rem;
+}
+
+.header__frete{
+    font: 500 1rem Archivo, sans-serif;
+}
+
+.inicio{
+    background-image: url('/assets/imagens/fundoMichaelJordan.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:scroll;
+    height: 43vh;
+}
+
+.inicio__text{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 0rem 0rem 0rem 15rem;
+    
+}
+
+.inicio__text__marca{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 3rem 0rem 2rem 0rem;
+}
+
+.inicio__text__marca__img{
+    width: 2rem;
+}
+
+.inicio__text__marca__brand{
+    color: #FFF;
+    font: 500 1rem Archivo, sans-serif;
+}
+
+.inicio__text__title{
+    color: #FFF;
+    font: 500 2rem Archivo, sans-serif;
+    padding: 0rem 0rem 1.3rem 0rem;
+}
+
+.inicio__text__subtitle{
+    color: #FFF;
+    font: 400 1.1rem Archivo, sans-serif;
+    width: 24rem;
+    line-height: 25px;
+}
+
+
+.produtos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    padding: 80px 0px 80px 0px;
+}
+
+.produtos__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.produtos__text__title{
+    font: 600 2rem Archivo, sans-serif;
+}
+
+.produtos__text__subtitle{
+    font: 400 1.1rem Archivo, sans-serif;
+    width: 30rem;
+    text-align: center;
+}
+
+.produtos__cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5rem;
+}
+
+.produtos__cards__card{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    gap: 1.5rem;
+    height: auto;
+    width: 24rem;
+
+}
+
+.produtos__cards__card__img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F3F7FF;
+    height: 11rem;
+    width: 100%;
+}
+
+.produtos__cards__card__img img{
+    width: 14rem;
+}
+
+.produtos__cards__card__text{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 24px;
+    
+}
+
+.produtos__cards__card__text__title{
+    font: 500 1.2rem Archivo, sans-serif;
+}
+
+.produtos__cards__card__text__subtitle{
+    font: 500 1rem Archivo, sans-serif;
+    color: #7CA2F4;
+}
+
+.produtos__cards__card__text__price{
+    font: 500 1.3rem Archivo, sans-serif;
+    color: #121214;
+
+}
+
+
+@media (min-width: 1025px) and (max-width: 1200px){
+    
+    .produtos__cards{
+        gap: 4rem;
+    }
+    
+    .produtos__cards__card{
+        width: 18rem;
+    }
+
+    .produtos__cards__card__img img{
+        width: 11rem;
+    }
+
+    .produtos__cards__card__text__title{
+        font-size: 1.1rem;
+    }
+
+    .produtos__cards__card__text__subtitle{
+        font-size: 0.9rem;
+    }
+
+    .produtos__cards__card__text__price{
+        font-size: 1.3rem;
+    }
+}
+
+@media(min-width: 769px) and (max-width: 1024px){
+    
+    .inicio__text__marca__img{
+        width: 2rem;
+    }
+
+    .inicio__text__marca__brand{
+        font-size: 1rem;
+    }
+    
+    .inicio__text{
+        padding: 0rem 0rem 0rem 4rem;
+    }
+
+    .inicio__text__title{
+        font-size: 1.5rem;
+    }
+
+    .inicio__text__subtitle{
+        font-size: 1.1rem;
+    }
+
+
+    .produtos__text__title{
+        font-size: 1.4rem;
+    }
+
+    .produtos__text__subtitle{
+        font-size: 1rem;
+    }
+
+
+    .produtos__cards{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .produtos__cards__card{
+        width: 21rem;
+    }
+
+    .produtos__cards__card__img img{
+        width: 12rem;
+    }
+
+    .produtos__cards__card__text__title{
+        font-size: 1.3rem;
+    }
+
+    .produtos__cards__card__text__subtitle{
+        font-size: 1rem;
+    }
+
+    .produtos__cards__card__text__price{
+        font-size: 1.4rem;
+    }
+
+}
+
+
+
+@media (min-width: 320px) and (max-width: 768px){
+   
+    .inicio{
+        background-size: cover;
+        background-position: center;
+    }
+
+    .inicio__text{
+        padding: 0rem 0rem 0rem 2.5rem;
+    }
+
+
+    .inicio__text__title{
+        font-size: 1.3rem;
+    }
+
+    .inicio__text__subtitle{
+        width: 15rem;
+        font-size: 0.9rem;
+    }
+
+
+    .produtos__text__title{
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    
+    .produtos__text__subtitle{
+        width: 20rem;
+        font-size: 0.9rem;
+    }
+
+    .produtos__cards{
+        grid-template-columns: 1fr;
+    }
+
+    .produtos__cards__card{
+        width: 17rem;
+    }
+
+    .produtos__cards__card__text__title,  .produtos__cards__card__text__subtitle{
+        font-size: 1rem;
+    }
+
+    .produtos__cards__card__text__price{
+        font-size: 1.2rem;
+    }
+
+
+    
+}

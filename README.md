@@ -12,7 +12,7 @@ Projeto da comunidade Codelab⛈<br/>
 <br>
 
 <p align="center">
-  <img alt="project-img" src="./assets/banner.png" width="100%">
+  <img alt="project-img" src="./assets/imagens/banner.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
